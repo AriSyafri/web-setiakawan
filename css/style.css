@@ -1,0 +1,105 @@
+:root {
+    --primary: #76ABAE;
+    --bg: #B3C8CF;
+}
+
+/* bintang (*) untuk all selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 7%;
+    background-color: rgba(190, 215, 220, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222831;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: #222831;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: #222831;
+    margin: 0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+
+/* media queries */
+
+/* laptop */
+/* cari responsive breakpoint */
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 758px){
+    html{
+        font-size: 62.5%;
+    }
+}
+
+/* mobile phone*/
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+}
