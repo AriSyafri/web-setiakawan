@@ -16,7 +16,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
-    color: #fff;
+    color: #222831;
     min-height: 10000px;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar .navbar-logo span {
-    color: var(--primary);
+    color: #fff;
 }
 
 .navbar .navbar-nav a {
@@ -121,7 +121,7 @@ body {
 }
 
 .hero .content h1 span {
-    color: var(--primary);
+    color: #fff;
 }
 
 .hero .content p {
@@ -146,21 +146,24 @@ body {
 
 /* about section */
 .about,
-.products {
+.products,
+.contact {
     padding: 7rem 7% 1.4rem;
     max-widht: 60rem;
 }
 
 .about h2,
-.products h2 {
+.products h2,
+.contact h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
 .about h2 span,
-.products h2 span {
-    color: var(--primary);
+.products h2 span,
+.contact h2 span {
+    color: #fff;
 }
 
 .about .row {
@@ -195,11 +198,13 @@ body {
 
 
 /* menu section */
-.products h2 {
+.products h2,
+.contact h2, {
     margin-bottom: 1rem;
 }
 
-.products p {
+.products p,
+.contact p {
     text-align: center;
     max-width: 30rem;
     margin: auto;
