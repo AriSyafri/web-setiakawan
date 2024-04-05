@@ -17,7 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
-    min-height: 2000px;
+    min-height: 10000px;
 }
 
 /* navbar */
@@ -145,18 +145,21 @@ body {
 
 
 /* about section */
-.about {
+.about,
+.products {
     padding: 7rem 7% 1.4rem;
     max-widht: 60rem;
 }
 
-.about h2 {
+.about h2,
+.products h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
-.about h2 span {
+.about h2 span,
+.products h2 span {
     color: var(--primary);
 }
 
@@ -189,6 +192,45 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
 }
+
+
+/* menu section */
+.products h2 {
+    margin-bottom: 1rem;
+}
+
+.products p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.products .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+
+}
+
+.products .row .menu-card {
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.products .row .menu-card img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.products .row .menu-card .menu-card-title {
+    margin: 1rem auto 0.5rem;
+}
+
+
+
 
 
 
@@ -243,6 +285,7 @@ body {
         transform: scaleX(0.2);
 
     }
+    
 
     .about .row {
         flex-wrap: wrap;
@@ -265,6 +308,10 @@ body {
 
     .about .row .content p {
         font-size: 1.6rem;
+    }
+
+    .products p {
+        font-size: 1.2rem;
     }
 }
 
