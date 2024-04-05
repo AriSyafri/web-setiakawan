@@ -19,6 +19,10 @@ body {
     color: #222831;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* navbar */
 .navbar {
     display: flex;
@@ -120,7 +124,7 @@ body {
 }
 
 .hero .content h1 span {
-    color: #fff;
+    color: #222831;
 }
 
 .hero .content p {
