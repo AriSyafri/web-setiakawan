@@ -347,6 +347,17 @@ footer .credit a:hover {
         font-size: 62.5%;
     }
 
+    .hero .content h1 {
+        color: #222831;
+
+    
+    }
+    
+    .hero .content h1 span {
+        color: #fff;
+    }
+    
+
     #hamburger-menu {
         display: inline-block;
     }
