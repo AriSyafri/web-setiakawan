@@ -186,6 +186,7 @@ html {
 /* about section */
 .about,
 .products,
+.barang,
 .contact {
     padding: 7rem 7% 1.4rem;
     max-widht: 60rem;
@@ -193,6 +194,7 @@ html {
 
 .about h2,
 .products h2,
+.barang h2,
 .contact h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -201,6 +203,7 @@ html {
 
 .about h2 span,
 .products h2 span,
+.barang h2 span,
 .contact h2 span {
     color: #fff;
 }
@@ -243,7 +246,8 @@ html {
 }
 
 .products p,
-.contact p {
+.contact p,
+.barang p {
     text-align: center;
     max-width: 30rem;
     margin: auto;
@@ -273,6 +277,75 @@ html {
     margin: 1rem auto 0.5rem;
 }
 
+/* barang section */
+.barang .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.barang .barang-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+
+}
+
+.barang .barang-icon {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.barang .barang-icon a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.barang .barang-icon a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.barang .barang-img img {
+    height: 25rem;
+}
+
+.barang .barang-content h3 {
+    font-size: 2rem;
+}
+
+.barang .barang-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+}
+
+.barang .barang-stars .star-full {
+    fill: var(--primary);
+
+}
+
+.barang .barang-harga {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.barang .barang-harga span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+
+}
 
 /* contact section */
 .contact .row {
