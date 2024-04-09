@@ -87,6 +87,42 @@ html {
     display: none;
 }
 
+/* navbar search section */
+.navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+    color: #222831;
+}
+
+.navbar .search-form.active {
+    transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+
+}
+
+.navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+
+}
+
+
 /* hero section */
 .hero {
     min-height: 100vh;
@@ -348,7 +384,7 @@ footer .credit a:hover {
     }
 
     .hero .content h1 {
-        color: #222831;
+        color: #fff;
 
     
     }
@@ -392,6 +428,11 @@ footer .credit a:hover {
     .navbar .navbar-nav a::hover::after {
         transform: scaleX(0.2);
 
+    }
+
+    .navbar .search-form {
+        width: 90%;
+        right: 2rem;
     }
     
 
