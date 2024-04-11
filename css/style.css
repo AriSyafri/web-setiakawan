@@ -446,6 +446,73 @@ html {
     cursor: pointer;
 }
 
+/* modal box */
+/* item detail */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    widht: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal .modal-container {
+    position: relative;
+    background-color: #fefefe;
+    color: #222831;
+    margin: 15% auto;
+    padding: 1.2rem;
+    border: 1px solid #666;
+    width: 80%;
+    animation: animateModal .5s;
+}
+
+/* modal animation */
+@keyframes animateModal{
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+}
+
+.modal .modal-container .close-icon {
+    position: absolute;
+    right: 1rem;
+}
+
+.modal .modal-container .modal-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.modal .modal-container .modal-content img {
+    height: 15rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal .modal-container .modal-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.modal .modal-container .modal-content a {
+    display: flex;
+    gap: 1rem;
+    width: 12rem;
+    background-color: #222831;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 1.6rem;
+}
+
+
+
 /* footer */
 footer {
     background-color: var(--primary);
@@ -601,6 +668,11 @@ footer .credit a:hover {
 
     .contact .row form {
         padding-top: 0;
+
+    }
+
+    .modal .modal-container .modal-content {
+        flex-wrap: wrap;
 
     }
 }
