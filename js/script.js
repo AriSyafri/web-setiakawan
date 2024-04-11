@@ -17,6 +17,8 @@ document.addEventListener('click', function(e){
 });
 
 
+
+
 // toggle class active search menu
 const searchForm = document.querySelector('.search-form');
 const searchBox = document.querySelector('#search-box');
@@ -41,6 +43,22 @@ document.addEventListener('click', function(e){
 
     if(!sb.contains(e.target) && !searchForm.contains(e.target)) {
         searchForm.classList.remove('active');
+    }
+
+});
+
+// bagian klik untuk shopping cart
+const cart = document.querySelector('.shopping-cart');
+document.querySelector('#shopping-cart').onclick = () => {
+    cart.classList.toggle('active');
+};
+
+// bagian untuk menghilangkan shopping cart
+const sc = document.querySelector('#shopping-cart');
+document.addEventListener('click', function(e){
+
+    if(!sc.contains(e.target) && !cart.contains(e.target)) {
+        cart.classList.remove('active');
     }
 
 });
